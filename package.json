@@ -28,5 +28,8 @@
   },
   "scripts": {
     "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-markdown-gfm": "^27.1.0"
   }
 }
