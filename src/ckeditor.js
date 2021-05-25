@@ -16,6 +16,8 @@ import Bold from "@ckeditor/ckeditor5-basic-styles/src/bold.js";
 import Heading from "@ckeditor/ckeditor5-heading/src/heading";
 import List from '@ckeditor/ckeditor5-list/src/list';
 import Markdown from '@ckeditor/ckeditor5-markdown-gfm/src/markdown';
+import Link from '@ckeditor/ckeditor5-link/src/link';
+import AutoLink from '@ckeditor/ckeditor5-link/src/autolink';
 
 class Editor extends ClassicEditor {}
 
@@ -46,6 +48,8 @@ Editor.defaultConfig = {
 // Plugins to include in the build.
 Editor.builtinPlugins = [
   Markdown,
+  Link,
+  AutoLink,
   Heading,
   List,
   Autoformat,
