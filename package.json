@@ -30,6 +30,10 @@
     "build": "webpack --mode production"
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-markdown-gfm": "^27.1.0"
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "@ckeditor/ckeditor5-markdown-gfm": "^27.1.0",
+    "babel-loader": "^8.2.2",
+    "regenerator-runtime": "^0.13.7"
   }
 }
