@@ -2,7 +2,7 @@
  * @license Copyright (c) 2014-2021, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
  */
-import ClassicEditor from "@ckeditor/ckeditor5-editor-classic/src/classiceditor.js";
+import ClassicEditor from "@ckeditor/ckeditor5-editor-classic/src/classiceditor";
 import Autoformat from "@ckeditor/ckeditor5-autoformat/src/autoformat.js";
 import Code from "@ckeditor/ckeditor5-basic-styles/src/code.js";
 import CodeBlock from "@ckeditor/ckeditor5-code-block/src/codeblock.js";
@@ -19,7 +19,8 @@ import Markdown from '@ckeditor/ckeditor5-markdown-gfm/src/markdown';
 import Link from '@ckeditor/ckeditor5-link/src/link';
 import AutoLink from '@ckeditor/ckeditor5-link/src/autolink';
 
-class Editor extends ClassicEditor {}
+class Editor extends ClassicEditor {
+}
 
 Editor.defaultConfig = {
   toolbar: {
