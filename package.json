@@ -18,6 +18,13 @@
     "@ckeditor/ckeditor5-mention": "^27.1.0",
     "@ckeditor/ckeditor5-paragraph": "^27.1.0",
     "@ckeditor/ckeditor5-theme-lark": "^27.1.0",
+    "@ckeditor/ckeditor5-markdown-gfm": "^27.1.0",
+    "@ckeditor/ckeditor5-react": "^3.0.2",
+    "babel-loader": "^8.2.2",
+    "regenerator-runtime": "^0.13.7",
+    "typescript": "^4.3.2",
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
     "css-loader": "^5.2.4",
     "postcss": "^8.2.10",
     "postcss-loader": "^4.2.0",
@@ -30,14 +37,5 @@
   },
   "scripts": {
     "build": "webpack --mode production"
-  },
-  "dependencies": {
-    "@babel/core": "^7.14.3",
-    "@babel/preset-env": "^7.14.2",
-    "@ckeditor/ckeditor5-markdown-gfm": "^27.1.0",
-    "@ckeditor/ckeditor5-react": "^3.0.2",
-    "babel-loader": "^8.2.2",
-    "regenerator-runtime": "^0.13.7",
-    "typescript": "^4.3.2"
   }
 }
