@@ -102,7 +102,7 @@ module.exports = {
             options: {
               postcssOptions: styles.getPostCssConfig({
                 themeImporter: {
-                  themePath: require.resolve("@ckeditor/ckeditor5-theme-lark"),
+                  themePath: require.resolve("./theme/theme.css"),
                 },
                 minify: true,
               }),
