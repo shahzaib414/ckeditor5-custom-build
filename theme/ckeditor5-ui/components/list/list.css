@@ -16,7 +16,7 @@
 
 .ck.ck-list__item {
 	cursor: default;
-	min-width: 12em;
+	min-width: 15em;
 
 	& .ck-button {
 		min-height: unset;

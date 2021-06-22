@@ -7,11 +7,18 @@
 
 /* eslint-env node */
 
+const fs = require('fs');
 const path = require("path");
 const webpack = require("webpack");
 const { bundler, styles } = require("@ckeditor/ckeditor5-dev-utils");
 const CKEditorWebpackPlugin = require("@ckeditor/ckeditor5-dev-webpack-plugin");
 const TerserWebpackPlugin = require("terser-webpack-plugin");
+
+const globalCSSFilePath = path.resolve(__dirname, 'node_modules/@ckeditor/ckeditor5-ui/theme/globals/globals.css')
+const globalCSSContent = fs.readFileSync(globalCSSFilePath, 'utf-8')
+const globalCSSContentWithoutReset = globalCSSContent.replace('@import "./_reset.css";', '')
+console.log(globalCSSContentWithoutReset)
+fs.writeFileSync(globalCSSFilePath, globalCSSContentWithoutReset, { encoding: 'utf-8' })
 
 module.exports = {
   devtool: "source-map",
@@ -79,7 +86,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.svg$/,
+        test: /ckeditor5-[^/\\]+[/\\]theme[/\\]icons[/\\][^/\\]+\.svg$/,
         use: ["raw-loader"],
       },
       {
