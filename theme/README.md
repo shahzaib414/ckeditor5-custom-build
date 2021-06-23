@@ -1,0 +1,1 @@
+Forked from https://github.com/ckeditor/ckeditor5/tree/86fd5e5/packages/ckeditor5-theme-lark
