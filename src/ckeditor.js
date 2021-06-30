@@ -21,6 +21,8 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import Link from '@ckeditor/ckeditor5-link/src/link';
 import AutoLink from '@ckeditor/ckeditor5-link/src/autolink';
 
+import ProductPreviewEditing from "./ProductPreviewEditing";
+
 class Editor extends ClassicEditor {
 }
 
@@ -59,7 +61,8 @@ Editor.builtinPlugins = [
   Table,
   TableToolbar,
   Link,
-  AutoLink
+  AutoLink,
+  ProductPreviewEditing
 ];
 
 export default Editor;
