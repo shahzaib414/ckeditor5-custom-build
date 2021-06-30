@@ -16,6 +16,10 @@ import Bold from "@ckeditor/ckeditor5-basic-styles/src/bold.js";
 import Heading from "@ckeditor/ckeditor5-heading/src/heading.js";
 import List from '@ckeditor/ckeditor5-list/src/list.js';
 import Markdown from '@ckeditor/ckeditor5-markdown-gfm/src/markdown';
+import Table from '@ckeditor/ckeditor5-table/src/table';
+import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
+import Link from '@ckeditor/ckeditor5-link/src/link';
+import AutoLink from '@ckeditor/ckeditor5-link/src/autolink';
 
 class Editor extends ClassicEditor {
 }
@@ -29,16 +33,10 @@ Editor.defaultConfig = {
       "italic",
       "bulletedList",
       "numberedList",
-      "|",
-      "indent",
-      "outdent",
-      "|",
-      "imageUpload",
       "blockQuote",
-      "insertTable",
-      "mediaEmbed",
-      "undo",
-      "redo",
+      "link",
+      "|",
+      "insertTable"
     ],
   },
   language: "en",
@@ -58,6 +56,10 @@ Editor.builtinPlugins = [
   Strikethrough,
   Underline,
   Bold,
+  Table,
+  TableToolbar,
+  Link,
+  AutoLink
 ];
 
 export default Editor;
